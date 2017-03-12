@@ -12,6 +12,8 @@
 		0A1C910A1E06BDBB00BD78E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A1C91081E06BDBB00BD78E4 /* Main.storyboard */; };
 		0A1C910C1E06BDBB00BD78E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A1C910B1E06BDBB00BD78E4 /* Assets.xcassets */; };
 		0A1C910F1E06BDBB00BD78E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A1C910D1E06BDBB00BD78E4 /* LaunchScreen.storyboard */; };
+		0A9F24AB1E742FDA00AF11BC /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9F24AA1E742FDA00AF11BC /* ResultViewController.swift */; };
+		0AAA2B3A1E07FAA8002DEB06 /* SelectionListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA2B391E07FAA8002DEB06 /* SelectionListController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		0A1C910B1E06BDBB00BD78E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A1C910E1E06BDBB00BD78E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A1C91101E06BDBB00BD78E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A9F24AA1E742FDA00AF11BC /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		0AAA2B391E07FAA8002DEB06 /* SelectionListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionListController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +58,10 @@
 		0A1C91031E06BDBB00BD78E4 /* SUT機種選択 */ = {
 			isa = PBXGroup;
 			children = (
-				0A1C91041E06BDBB00BD78E4 /* AppDelegate.swift */,
 				0A1C91061E06BDBB00BD78E4 /* ViewController.swift */,
+				0A9F24AA1E742FDA00AF11BC /* ResultViewController.swift */,
+				0AAA2B391E07FAA8002DEB06 /* SelectionListController.swift */,
+				0A1C91041E06BDBB00BD78E4 /* AppDelegate.swift */,
 				0A1C91081E06BDBB00BD78E4 /* Main.storyboard */,
 				0A1C910B1E06BDBB00BD78E4 /* Assets.xcassets */,
 				0A1C910D1E06BDBB00BD78E4 /* LaunchScreen.storyboard */,
@@ -91,7 +97,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "孫苗";
 				TargetAttributes = {
 					0A1C91001E06BDBB00BD78E4 = {
@@ -138,7 +144,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A1C91071E06BDBB00BD78E4 /* ViewController.swift in Sources */,
+				0AAA2B3A1E07FAA8002DEB06 /* SelectionListController.swift in Sources */,
 				0A1C91051E06BDBB00BD78E4 /* AppDelegate.swift in Sources */,
+				0A9F24AB1E742FDA00AF11BC /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +190,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -204,7 +213,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -231,6 +240,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -247,7 +257,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -261,6 +271,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GCL4C9FFCK;
 				INFOPLIST_FILE = "SUT機種選択/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ycit-miao.SUT----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -274,6 +285,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GCL4C9FFCK;
 				INFOPLIST_FILE = "SUT機種選択/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ycit-miao.SUT----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,6 +312,7 @@
 				0A1C91151E06BDBB00BD78E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
